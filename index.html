@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Colors Showcase</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+        body { background: #f5f5f5; color: #333; line-height: 1.6; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 2rem; }
+        .car-section { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 3rem; overflow: hidden; }
+        .car-header { background: #1a1a1a; color: white; padding: 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .car-header h2 { margin: 0; font-size: 2rem; font-weight: 700; }
+        .car-header p { margin: 0.5rem 0 0; opacity: 0.8; font-size: 1.1rem; }
+        .car-header .btn { background: #ff4500; color: white; padding: 0.8rem 1.5rem; border-radius: 8px; text-decoration: none; font-size: 1rem; }
+        .colors-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 2rem; padding: 2rem; }
+        .color-card { border-radius: 12px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.2s, box-shadow 0.2s; background: white; }
+        .color-card:hover { transform: translateY(-4px); box-shadow: 0 4px 12px rgba(0,0,0,0.15); }
+        .color-image { width: 100%; height: 250px; object-fit: cover; border-bottom: 1px solid #eee; }
+        .color-info { padding: 1.5rem; }
+        .color-preview { width: 50px; height: 50px; border-radius: 8px; margin-right: 1rem; border: 2px solid #eee; float: left; }
+        .color-name { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.5rem; color: #1a1a1a; }
+        .color-hex { font-family: monospace; color: #666; font-size: 0.9rem; }
+        .error-placeholder { width: 100%; height: 250px; background: #f8f8f8; display: flex; align-items: center; justify-content: center; color: #666; font-size: 0.9rem; }
+        @media (max-width: 768px) { .colors-grid { grid-template-columns: 1fr; } .car-header h2 { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2022 Aston Martin Vantage V12</h2>
+            <a href="https://squir.com/aston-martin-v12-vantage-2023.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.astonmartinofgreenwich.com/imagetag/5056/8/l/Used-2015-Aston-Martin-V12-Vantage-S.jpg" alt="Jet Black 2022 Aston Martin Vantage V12" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Jet Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.netcarshow.com/Aston_Martin-Vantage_Lime_Essence-2019-wallpaper.jpg" alt="Lime Essence 2022 Aston Martin Vantage V12" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #CFDB00"></div>
+                    <div class="color-name">Lime Essence</div>
+                    <div class="color-hex">#CFDB00</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://d3pgn05wtfnsmb.cloudfront.net/newport-beach/row_403/2S6A5357_0.JPG" alt="China Grey 2022 Aston Martin Vantage V12" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A3A3A3"></div>
+                    <div class="color-name">China Grey</div>
+                    <div class="color-hex">#A3A3A3</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/_6EmQrqqomg/maxresdefault.jpg" alt="Hyper Red 2022 Aston Martin Vantage V12" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #BF0D3E"></div>
+                    <div class="color-name">Hyper Red</div>
+                    <div class="color-hex">#BF0D3E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media-cdn-a5-jazel-tango.jazel-qa.com/media/267218769" alt="Sabiro Blue 2022 Aston Martin Vantage V12" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #003C71"></div>
+                    <div class="color-name">Sabiro Blue</div>
+                    <div class="color-hex">#003C71</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2022 Aston Martin Vantage F1</h2>
+            <a href="https://free3d.com/3d-model/aston-martin-vantage-f1-edition-2021-2145.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://di-uploads-pod26.dealerinspire.com/mikewardastonmartin/uploads/2021/12/GQPTi_lg.jpeg" alt="Aston Martin Racing Green 2022 Aston Martin Vantage F1" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #005A4C"></div>
+                    <div class="color-name">Aston Martin Racing Green</div>
+                    <div class="color-hex">#005A4C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://luxurypulse.com/img/pictures/62c84140cf80fon_01.jpeg" alt="Jet Black 2022 Aston Martin Vantage F1" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Jet Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.koenigseggwashingtondc.com/imagetag/3039/main/l/New-2022-Aston-Martin-Vantage-F1-Edition-1645807906.jpg" alt="Lunar White 2022 Aston Martin Vantage F1" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E3E3E3"></div>
+                    <div class="color-name">Lunar White</div>
+                    <div class="color-hex">#E3E3E3</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/MW3kge-JRVk/maxresdefault.jpg" alt="Satin Xenon Grey 2022 Aston Martin Vantage F1" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A2A5A6"></div>
+                    <div class="color-name">Satin Xenon Grey</div>
+                    <div class="color-hex">#A2A5A6</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/aI9VUpIlYNU/maxresdefault.jpg" alt="Satin Mariana Blue Metallic 2022 Aston Martin Vantage F1" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #003366"></div>
+                    <div class="color-name">Satin Mariana Blue Metallic</div>
+                    <div class="color-hex">#003366</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2013 Audi R8 GT</h2>
+            <a href="https://3dmodels.org/3d-models/audi-r8-gt-2011/" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://pbs.twimg.com/media/EYXyuAWWkAAtDnV.jpg" alt="Samoa Orange 2013 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E66032"></div>
+                    <div class="color-name">Samoa Orange</div>
+                    <div class="color-hex">#E66032</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gtspirit.com/wp-content/uploads/2013/12/Audi-R8-PD-GT850-4.jpg" alt="Ibis White 2013 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Ibis White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/6Unb1VyqcAc/maxresdefault.jpg" alt="Phantom Black Pearl 2013 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #100F0D"></div>
+                    <div class="color-name">Phantom Black Pearl</div>
+                    <div class="color-hex">#100F0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://assets.carandclassic.com/uploads/new/18681759/aed69f25-e885-44a8-b262-603d23c430df.jpeg?fit=fillmax&h=800&ixlib=php-4.1.0&q=85&w=800&s=2d1f4ec2c091c02c92c88f6c3dcf0e73" alt="Brilliant Red 2013 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C01618"></div>
+                    <div class="color-name">Brilliant Red</div>
+                    <div class="color-hex">#C01618</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.r8talk.com/attachments/173562/" alt="Sepang Blue Pearl 2013 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1B3950"></div>
+                    <div class="color-name">Sepang Blue Pearl</div>
+                    <div class="color-hex">#1B3950</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2023 Audi R8 GT</h2>
+            <a href="https://sketchfab.com/3d-models/audi-r8-gt-18cb3c648f1743aa9ab9f812a25d810b" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/38401-delben-2023-audi-r8-gt-v10/.thumbnails/38401.webp/38401-tiny-810x0.webp" alt="Tango Red Metallic 2023 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B9121B"></div>
+                    <div class="color-name">Tango Red Metallic</div>
+                    <div class="color-hex">#B9121B</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://bringatrailer.com/wp-content/uploads/2024/06/2023_audi_r8-gt_photo-2-of-192-10313.jpg" alt="Mythos Black Metallic 2023 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #171A1C"></div>
+                    <div class="color-name">Mythos Black Metallic</div>
+                    <div class="color-hex">#171A1C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/iq5Uzn8Yano/maxresdefault.jpg" alt="Daytona Gray Pearl 2023 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #7D7E82"></div>
+                    <div class="color-name">Daytona Gray Pearl</div>
+                    <div class="color-hex">#7D7E82</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://d3sm3e0zl6r9d1.cloudfront.net/sothebysmotor/vehicles/D2F1EBE5-FA46-4568-903C-8CC6B1ECDBE4/images/450EE041-B197-47D9-87DA-4AB5F2A71BC1.webp" alt="Ascari Blue Metallic 2023 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #005F8C"></div>
+                    <div class="color-name">Ascari Blue Metallic</div>
+                    <div class="color-hex">#005F8C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://am-s3-bucket-assets.s3.eu-west-2.amazonaws.com/silverstone/prod/lot_images/large/REC13401-1/REC13401-1_3.jpg.webp?dummy=1738385268" alt="Ibis White 2023 Audi R8 GT" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Ibis White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2010 Audi  RS6  </h2>
+            <a href="https://model-copy.info/product_info.php?products_id=18984" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.audiworld.com/forums/attachments/a4-b8-platform-discussion-128/79802d1501280901-phantom-black-vs-brillant-black-front.jpg" alt="Phantom Black Pearl 2010 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #100F0D"></div>
+                    <div class="color-name">Phantom Black Pearl</div>
+                    <div class="color-hex">#100F0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/27271-bob-grey-audi/.thumbnails/335D4F3B-2D99-48C9-BF37-8363A85C62D5.webp/335D4F3B-2D99-48C9-BF37-8363A85C62D5-tiny-1200x0.webp" alt="Daytona Gray Pearl 2010 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #7D7E82"></div>
+                    <div class="color-name">Daytona Gray Pearl</div>
+                    <div class="color-hex">#7D7E82</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.imgur.com/IzSk1Pv.jpg" alt="Ibis White 2010 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Ibis White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static0.topspeedimages.com/wordpress/wp-content/uploads/jpg/201002/audi-rs6-plus-sport-.jpg" alt="Mugello Blue Pearl 2010 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #021C45"></div>
+                    <div class="color-name">Mugello Blue Pearl</div>
+                    <div class="color-hex">#021C45</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/8vr1eUodjeg/maxresdefault.jpg" alt="Misano Red Pearl 2010 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B0171F"></div>
+                    <div class="color-name">Misano Red Pearl</div>
+                    <div class="color-hex">#B0171F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2015 Audi  RS6  </h2>
+            <a href="https://3dexport.com/3dmodel-audi-rs6-sedan-2014-68683.htm" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.edmunds.com/assets/m/for-sale/5c-wuaw2afc4fn900460/img-1-600x400.jpg" alt="Nardo Gray 2015 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #959595"></div>
+                    <div class="color-name">Nardo Gray</div>
+                    <div class="color-hex">#959595</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://uploads.tapatalk-cdn.com/20181229/6416f87ef44939842e279c75d66b3493.jpg" alt="Misano Red Pearl 2015 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B0171F"></div>
+                    <div class="color-name">Misano Red Pearl</div>
+                    <div class="color-hex">#B0171F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/4822e9034b0b6b357b3f73fabdfc10e586c36f68/photos/3veLJ7wd-9bvUiAcpIR-(edit).jpg?t=169599297197" alt="Sepang Blue Pearl 2015 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1B3950"></div>
+                    <div class="color-name">Sepang Blue Pearl</div>
+                    <div class="color-hex">#1B3950</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://blog.034motorsport.com/wp-content/uploads/2015/09/glacier-white-metallic-audi-s3-suspension-upgrades-performance-exhaust-3.jpg" alt="Glacier White Metallic 2015 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E7E8E2"></div>
+                    <div class="color-name">Glacier White Metallic</div>
+                    <div class="color-hex">#E7E8E2</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.perfectautocollection.com/imagetag/3616/2/l/Used-2019-Audi-RS-3-25T-quattro-1728339366.jpg" alt="Mythos Black Metallic 2015 Audi  RS6  " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #171A1C"></div>
+                    <div class="color-name">Mythos Black Metallic</div>
+                    <div class="color-hex">#171A1C</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 Audi  RS6 </h2>
+            <a href="https://squir.com/audi-rs6-avant-2015.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.edmunds.com/assets/m/for-sale/5c-wuaw2afc4fn900460/img-1-600x400.jpg" alt="Nardo Gray 2016 Audi  RS6 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #959595"></div>
+                    <div class="color-name">Nardo Gray</div>
+                    <div class="color-hex">#959595</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/4822e9034b0b6b357b3f73fabdfc10e586c36f68/photos/3veLJ7wd-9bvUiAcpIR-(edit).jpg?t=169599297197" alt="Sepang Blue Pearl 2016 Audi  RS6 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1B3950"></div>
+                    <div class="color-name">Sepang Blue Pearl</div>
+                    <div class="color-hex">#1B3950</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://uploads.tapatalk-cdn.com/20181229/6416f87ef44939842e279c75d66b3493.jpg" alt="Misano Red Pearl 2016 Audi  RS6 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B0171F"></div>
+                    <div class="color-name">Misano Red Pearl</div>
+                    <div class="color-hex">#B0171F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://blog.034motorsport.com/wp-content/uploads/2015/09/glacier-white-metallic-audi-s3-suspension-upgrades-performance-exhaust-3.jpg" alt="Glacier White Metallic 2016 Audi  RS6 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E7E8E2"></div>
+                    <div class="color-name">Glacier White Metallic</div>
+                    <div class="color-hex">#E7E8E2</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.perfectautocollection.com/imagetag/3616/2/l/Used-2019-Audi-RS-3-25T-quattro-1728339366.jpg" alt="Mythos Black Metallic 2016 Audi  RS6 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #171A1C"></div>
+                    <div class="color-name">Mythos Black Metallic</div>
+                    <div class="color-hex">#171A1C</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2018 Audi  RS6 Performance</h2>
+            <a href="https://www.cgtrader.com/3d-models/car/sport-car/audi-rs6-avant-2017" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.edmunds.com/assets/m/for-sale/5c-wuaw2afc4fn900460/img-1-600x400.jpg" alt="Nardo Gray 2018 Audi  RS6 Performance" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #959595"></div>
+                    <div class="color-name">Nardo Gray</div>
+                    <div class="color-hex">#959595</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/b4uiJ8Qa7ZY/maxresdefault.jpg" alt="Ascari Blue Metallic 2018 Audi  RS6 Performance" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004F9E"></div>
+                    <div class="color-name">Ascari Blue Metallic</div>
+                    <div class="color-hex">#004F9E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.chicagomotorcars.com/imagetag/8763/2/l/Used-2021-Audi-RS6-40T-quattro-Avant-CARBON-FIBER-PKG-CERAMIC-BRAKES-DME-STAGE-2+IPE-DOWNPIPE-1631921542.jpg" alt="Tango Red Metallic 2018 Audi  RS6 Performance" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B9121B"></div>
+                    <div class="color-name">Tango Red Metallic</div>
+                    <div class="color-hex">#B9121B</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://blog.034motorsport.com/wp-content/uploads/2015/09/glacier-white-metallic-audi-s3-suspension-upgrades-performance-exhaust-3.jpg" alt="Glacier White Metallic 2018 Audi  RS6 Performance" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E7E8E2"></div>
+                    <div class="color-name">Glacier White Metallic</div>
+                    <div class="color-hex">#E7E8E2</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.perfectautocollection.com/imagetag/3616/2/l/Used-2019-Audi-RS-3-25T-quattro-1728339366.jpg" alt="Mythos Black Metallic 2018 Audi  RS6 Performance" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #171A1C"></div>
+                    <div class="color-name">Mythos Black Metallic</div>
+                    <div class="color-hex">#171A1C</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2023 Ferrari F8 </h2>
+            <a href="https://sketchfab.com/3d-models/ferrari-f8-tributo-6bcd4a3c08034c9a9e7e3ecd0966ce7c" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.rossocorsa.com/wp-content/uploads/2023/06/Ferrari-F8-Spider-1.jpg" alt="Rosso Corsa 2023 Ferrari F8 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://images.unitsinventory.com/uploads/photos/1601/2024-11-19/6882211aa8ddd458bcbb71af3deba337.jpg" alt="Giallo Modena 2023 Ferrari F8 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://cdn.dicklovett.co.uk/uploads/used_stock_image/1_1979579_e.jpg?v=1733504927" alt="Nero Daytona 2023 Ferrari F8 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://news.dupontregistry.com/wp-content/uploads/2022/02/DSC00879.jpg" alt="Blu Corsa 2023 Ferrari F8 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1F3FA7"></div>
+                    <div class="color-name">Blu Corsa</div>
+                    <div class="color-hex">#1F3FA7</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ferrariofgreenwich.com/imagetag/7722/30/l/Used-2023-Ferrari-F8-Spider.jpg" alt="Grigio Silverstone 2023 Ferrari F8 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2023 Ferrari F8 Spider</h2>
+            <a href="https://sketchfab.com/3d-models/ferrari-f8-spider-e07da19be464427994764b267c35a213" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.rossocorsa.com/wp-content/uploads/2023/06/Ferrari-F8-Spider-1.jpg" alt="Rosso Corsa 2023 Ferrari F8 Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://images.unitsinventory.com/uploads/photos/1601/2024-11-19/6882211aa8ddd458bcbb71af3deba337.jpg" alt="Giallo Modena 2023 Ferrari F8 Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://cdn.dicklovett.co.uk/uploads/used_stock_image/1_1979579_e.jpg?v=1733504927" alt="Nero Daytona 2023 Ferrari F8 Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://news.dupontregistry.com/wp-content/uploads/2022/02/DSC00879.jpg" alt="Blu Corsa 2023 Ferrari F8 Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1F3FA7"></div>
+                    <div class="color-name">Blu Corsa</div>
+                    <div class="color-hex">#1F3FA7</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ferrariofgreenwich.com/imagetag/7722/30/l/Used-2023-Ferrari-F8-Spider.jpg" alt="Grigio Silverstone 2023 Ferrari F8 Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Ferrari SF90 Stradale</h2>
+            <a href="https://greatcatalog.net/en/ferrari-sf90-stradale-m59925.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.ferrariofcentralnj.com/imagetag/17771/2/l/Used-2023-Ferrari-SF90-Stradale-1711452494.jpg" alt="Rosso Corsa 2025 Ferrari SF90 Stradale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://vehicle-images.dealerinspire.com/d979-18002979/ZFF95NLA7M0262826/0d842f5bda22e7ea530c5e3b5e9ac10d.jpg" alt="Giallo Modena 2025 Ferrari SF90 Stradale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/-rTHrP8e2C8/maxresdefault.jpg" alt="Nero Daytona 2025 Ferrari SF90 Stradale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gcbimages.s3.us-west-001.backblazeb2.com/d4/3026/2499518/74094411/s/ef0e68ecbbb245e29aca863410ed0ce0.jpg" alt="Blu Tour De France 2025 Ferrari SF90 Stradale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.prd.luxauto.lu/pictures/occasions/x/1549695_1.jpg?v=1" alt="Grigio Silverstone 2025 Ferrari SF90 Stradale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Ferrari SF90 XX Spider</h2>
+            <a href="https://squir.com/ferrari-sf90-xx-spider-2024.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.ferrariofcentralnj.com/imagetag/17771/2/l/Used-2023-Ferrari-SF90-Stradale-1711452494.jpg" alt="Rosso Corsa 2025 Ferrari SF90 XX Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://vehicle-images.dealerinspire.com/d979-18002979/ZFF95NLA7M0262826/0d842f5bda22e7ea530c5e3b5e9ac10d.jpg" alt="Giallo Modena 2025 Ferrari SF90 XX Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/-rTHrP8e2C8/maxresdefault.jpg" alt="Nero Daytona 2025 Ferrari SF90 XX Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gcbimages.s3.us-west-001.backblazeb2.com/d4/3026/2499518/74094411/s/ef0e68ecbbb245e29aca863410ed0ce0.jpg" alt="Blu Tour De France 2025 Ferrari SF90 XX Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.prd.luxauto.lu/pictures/occasions/x/1549695_1.jpg?v=1" alt="Grigio Silverstone 2025 Ferrari SF90 XX Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Ferrari SF90 XX</h2>
+            <a href="https://sketchfab.com/3d-models/2024-ferrari-sf90-xx-spider-ed3da12ae24d4eb58138fa366890775f" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.ferrariofcentralnj.com/imagetag/17771/2/l/Used-2023-Ferrari-SF90-Stradale-1711452494.jpg" alt="Rosso Corsa 2025 Ferrari SF90 XX" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://vehicle-images.dealerinspire.com/d979-18002979/ZFF95NLA7M0262826/0d842f5bda22e7ea530c5e3b5e9ac10d.jpg" alt="Giallo Modena 2025 Ferrari SF90 XX" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/-rTHrP8e2C8/maxresdefault.jpg" alt="Nero Daytona 2025 Ferrari SF90 XX" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gcbimages.s3.us-west-001.backblazeb2.com/d4/3026/2499518/74094411/s/ef0e68ecbbb245e29aca863410ed0ce0.jpg" alt="Blu Tour De France 2025 Ferrari SF90 XX" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.prd.luxauto.lu/pictures/occasions/x/1549695_1.jpg?v=1" alt="Grigio Silverstone 2025 Ferrari SF90 XX" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2015 Ferrari 458 Italia Speciale</h2>
+            <a href="https://sketchfab.com/3d-models/ferrari-458-speciale-9c2737cc51c7455ab8a75c7e0442e209" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/4PshNgaRVz0/maxresdefault.jpg" alt="Rosso Corsa 2015 Ferrari 458 Italia Speciale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.carscoops.com/wp-content/uploads/2023/04/Ferrari-458-Speciale-1.webp" alt="Giallo Modena 2015 Ferrari 458 Italia Speciale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ilusso.com/imagetag/1573/main/l/Used-2015-Ferrari-458-Speciale-1681846773.jpg" alt="Nero Daytona 2015 Ferrari 458 Italia Speciale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Daytona</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.cauleyferrari.com/imagetag/540/3/l/Used-2015-Ferrari-458-Speciale-A.jpg" alt="Bianco Avus 2015 Ferrari 458 Italia Speciale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Bianco Avus</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.marshallgoldmanbh.com/imagetag/3114/5/l/Used-2015-Ferrari-458-Speciale-1731011792.jpg" alt="Blu Tour De France 2015 Ferrari 458 Italia Speciale" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Ferrari Roma </h2>
+            <a href="https://sketchfab.com/3d-models/ferrari-roma-3a567b37a20b47cab69d572a4d421de4" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.ar-cars.cz/cache/images/project/010/10003/1920x1094-exact/default/87/77687-ferrari-roma-ov-ru-v8-rosso-corsa-cz-0.jpeg" alt="Rosso Corsa 2025 Ferrari Roma " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/B_Ss0zf4DQw/maxresdefault.jpg" alt="Giallo Modena 2025 Ferrari Roma " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.cargurus.com/images/forsale/2024/12/11/17/18/2024_ferrari_roma-pic-913303517494672091-1024x768.jpeg" alt="Nero 2025 Ferrari Roma " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://d2l6r91nnee1so.cloudfront.net/media/xlarge_mph000_3450884005_Used_2024_Ferrari_Roma_1732760540_aff2212821.webp" alt="Blu Tour De France 2025 Ferrari Roma " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gcbimages.s3.us-west-001.backblazeb2.com/d4/3018/4666342/77873119/o/0953c8f42ca94a3a83a7042a329a74ee.jpg" alt="Grigio Silverstone 2025 Ferrari Roma " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Ferrari Roma Spider</h2>
+            <a href="https://squir.com/ferrari-roma-spider-2024.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.ar-cars.cz/cache/images/project/010/10003/1920x1094-exact/default/87/77687-ferrari-roma-ov-ru-v8-rosso-corsa-cz-0.jpeg" alt="Rosso Corsa 2025 Ferrari Roma Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Corsa</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/B_Ss0zf4DQw/maxresdefault.jpg" alt="Giallo Modena 2025 Ferrari Roma Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Modena</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.cargurus.com/images/forsale/2024/12/11/17/18/2024_ferrari_roma-pic-913303517494672091-1024x768.jpeg" alt="Nero 2025 Ferrari Roma Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://d2l6r91nnee1so.cloudfront.net/media/xlarge_mph000_3450884005_Used_2024_Ferrari_Roma_1732760540_aff2212821.webp" alt="Blu Tour De France 2025 Ferrari Roma Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2C3E75"></div>
+                    <div class="color-name">Blu Tour De France</div>
+                    <div class="color-hex">#2C3E75</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://gcbimages.s3.us-west-001.backblazeb2.com/d4/3018/4666342/77873119/o/0953c8f42ca94a3a83a7042a329a74ee.jpg" alt="Grigio Silverstone 2025 Ferrari Roma Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 Lamborghini Aventador LP 750-4 Superveloce</h2>
+            <a href="https://squir.com/lamborghini-aventador-lp750-4-sv-2016-vray.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://f7432d8eadcf865aa9d9-9c672a3a4ecaaacdf2fee3b3e6fd2716.ssl.cf3.rackcdn.com/C3132/U515/IMG_13634-large.jpg" alt="Rosso Bia 2016 Lamborghini Aventador LP 750-4 Superveloce" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Bia</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ilusso.com/imagetag/256/main/l/Used-2016-Lamborghini-Aventador-LP-750-4-SV-1634246537.jpg" alt="Giallo Orion 2016 Lamborghini Aventador LP 750-4 Superveloce" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD500"></div>
+                    <div class="color-name">Giallo Orion</div>
+                    <div class="color-hex">#FFD500</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.lamborghinilongisland.com/imagetag/2051/main/l/Used-2016-Lamborghini-Aventador-LP-700-4-Roadster-1497716247.jpg" alt="Verde Ithaca 2016 Lamborghini Aventador LP 750-4 Superveloce" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #66A86D"></div>
+                    <div class="color-name">Verde Ithaca</div>
+                    <div class="color-hex">#66A86D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://bluesky.cdn.imgeng.in/cogstock-images/7f27892f-fd91-4553-9701-6fb6513c8867.jpg?imgeng=/w_1200/" alt="Nero Aldebaran 2016 Lamborghini Aventador LP 750-4 Superveloce" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Aldebaran</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://exclusivecarregistry.com/render-images?imgid=204316" alt="Blu Le Mans 2016 Lamborghini Aventador LP 750-4 Superveloce" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004AAD"></div>
+                    <div class="color-name">Blu Le Mans</div>
+                    <div class="color-hex">#004AAD</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2022 Lamborghini Aventador LP 780-4 Ultimae Roadster</h2>
+            <a href="https://squir.com/lamborghini-aventador-roadster-2022.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://pbs.twimg.com/media/Ft_r5jCXoAEN7df.jpg:large" alt="Grigio Acheso 2022 Lamborghini Aventador LP 780-4 Ultimae Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #7D7E80"></div>
+                    <div class="color-name">Grigio Acheso</div>
+                    <div class="color-hex">#7D7E80</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://exclusivecarregistry.com/render-images?imgid=425961" alt="Rosso Efesto 2022 Lamborghini Aventador LP 780-4 Ultimae Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A20021"></div>
+                    <div class="color-name">Rosso Efesto</div>
+                    <div class="color-hex">#A20021</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://web2.wheelz.me/wp-content/uploads/2021/07/5887214.jpg" alt="Blu Tawaret 2022 Lamborghini Aventador LP 780-4 Ultimae Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #003A70"></div>
+                    <div class="color-name">Blu Tawaret</div>
+                    <div class="color-hex">#003A70</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/_1OQJuZqLFM/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDGyx5yn6bMGdqY0eIMaY4uMOUg5g" alt="Nero Nemesis 2022 Lamborghini Aventador LP 780-4 Ultimae Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #252525"></div>
+                    <div class="color-name">Nero Nemesis</div>
+                    <div class="color-hex">#252525</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://exclusivecarregistry.com/images/cars/preview/thumb_32784.jpg" alt="Giallo Auge 2022 Lamborghini Aventador LP 780-4 Ultimae Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD100"></div>
+                    <div class="color-name">Giallo Auge</div>
+                    <div class="color-hex">#FFD100</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2020 Lamborghini Aventador S</h2>
+            <a href="https://squir.com/lamborghini-aventador-s-2017.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://pictures.dealer.com/l/lamborghinidallas/1613/83dc83884ef90b0afe65b57d0f386e60x.jpg" alt="Verde Mantis 2020 Lamborghini Aventador S" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #48A43F"></div>
+                    <div class="color-name">Verde Mantis</div>
+                    <div class="color-hex">#48A43F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://autoartmodels.de/wp-content/uploads/2020/04/79132w-1-1-scaled.jpg" alt="Giallo Orion 2020 Lamborghini Aventador S" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD200"></div>
+                    <div class="color-name">Giallo Orion</div>
+                    <div class="color-hex">#FFD200</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.carpaints.co/src/Frontend/Files/Cache/photoswipe_max_size/src/Frontend/Files/MediaLibrary/13/hi4a5098.webp" alt="Rosso Bia 2020 Lamborghini Aventador S" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Bia</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.lamborghinigoldcoast.com/imagetag/9966/2/l/Used-2020-Lamborghini-Aventador-LP-770-4-SVJ-1656435718.jpg" alt="Nero Pegaso 2020 Lamborghini Aventador S" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Pegaso</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/4IZFrzIV2w8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBDZ5zElN513aqoJI3y5mF1GeoBwg" alt="Blu Nila 2020 Lamborghini Aventador S" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #021F5F"></div>
+                    <div class="color-name">Blu Nila</div>
+                    <div class="color-hex">#021F5F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2019 Lamborghini Huracan Performante</h2>
+            <a href="https://squir.com/lowpoly-lamborghini-huracan-performante-2018.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.marshallgoldman.com/imagetag/2274/40/l/Used-2019-Lamborghini-Huracan-LP-640-4-Performante-Spyder-1651693664.jpg" alt="Verde Mantis 2019 Lamborghini Huracan Performante" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #48A43F"></div>
+                    <div class="color-name">Verde Mantis</div>
+                    <div class="color-hex">#48A43F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://live.staticflickr.com/4848/45472414565_a197918f67_b.jpg" alt="Giallo Inti 2019 Lamborghini Huracan Performante" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD200"></div>
+                    <div class="color-name">Giallo Inti</div>
+                    <div class="color-hex">#FFD200</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.lamborghini-talk.com/attachments/img_9636-jpeg.286697/" alt="Rosso Mars 2019 Lamborghini Huracan Performante" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #D40000"></div>
+                    <div class="color-name">Rosso Mars</div>
+                    <div class="color-hex">#D40000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/p7OWVfgcw0w/maxresdefault.jpg" alt="Blu Le Mans 2019 Lamborghini Huracan Performante" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004AAD"></div>
+                    <div class="color-name">Blu Le Mans</div>
+                    <div class="color-hex">#004AAD</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/zLWSL1MW-_Y/maxresdefault.jpg" alt="Nero Noctis 2019 Lamborghini Huracan Performante" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Noctis</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2025 Lamborghini Huracan Tecnica</h2>
+            <a href="https://squir.com/lamborghini-huracan-tecnica-2023.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://lamborghinidownersgrove.com/imagetag/2643/main/l/New-2023-Lamborghini-Huracan-Tecnica-1690307785.jpg" alt="Bianco Phanes 2025 Lamborghini Huracan Tecnica" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #F0F0F0"></div>
+                    <div class="color-name">Bianco Phanes</div>
+                    <div class="color-hex">#F0F0F0</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ebayimg.com/00/s/MTA2NlgxNjAw/z/iFoAAOSwoeBkazbR/$_57.JPG?set_id=880000500F" alt="Rosso Bia 2025 Lamborghini Huracan Tecnica" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C10001"></div>
+                    <div class="color-name">Rosso Bia</div>
+                    <div class="color-hex">#C10001</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.lamborghinigoldcoast.com/imagetag/10874/2/l/New-2023-Lamborghini-Huracan-Tecnica-1689186022.jpg" alt="Arancio Anthaeus 2025 Lamborghini Huracan Tecnica" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FF6F00"></div>
+                    <div class="color-name">Arancio Anthaeus</div>
+                    <div class="color-hex">#FF6F00</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGzbdQskA59oman1c8Dh2sSnqmk6o5hSTmVQ&s" alt="Verde Turbine 2025 Lamborghini Huracan Tecnica" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #3A9D23"></div>
+                    <div class="color-name">Verde Turbine</div>
+                    <div class="color-hex">#3A9D23</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/CCgtsDW-xec/maxresdefault.jpg" alt="Blu Mehit 2025 Lamborghini Huracan Tecnica" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004AAD"></div>
+                    <div class="color-name">Blu Mehit</div>
+                    <div class="color-hex">#004AAD</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 McLaren 675LT Coupe</h2>
+            <a href="https://sketchfab.com/3d-models/mclaren-675lt-e6ac9c3c5e24446baa275543dd7d2a3a" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2020/08/McLaren-675LT-Coupe-Chicane-Grey-for-sale-15-of-27.jpg" alt="Chicane Grey 2016 McLaren 675LT Coupe" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #767D7C"></div>
+                    <div class="color-name">Chicane Grey</div>
+                    <div class="color-hex">#767D7C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/8GqzbLWBrfQ/maxresdefault.jpg" alt="Silica White 2016 McLaren 675LT Coupe" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E5E8E6"></div>
+                    <div class="color-name">Silica White</div>
+                    <div class="color-hex">#E5E8E6</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.exclusiveautomotivegroup.com/imagetag/1399/main/l/Used-2016-McLaren-675LT-1540580503.jpg" alt="Delta Red 2016 McLaren 675LT Coupe" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C8102E"></div>
+                    <div class="color-name">Delta Red</div>
+                    <div class="color-hex">#C8102E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.classicdriver.com/sites/default/files/users/95265/cars_images/95265-966488-car-20230506_161403-1.jpg" alt="Onyx Black 2016 McLaren 675LT Coupe" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #101010"></div>
+                    <div class="color-name">Onyx Black</div>
+                    <div class="color-hex">#101010</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://live.staticflickr.com/65535/51199830657_d752d6703e.jpg" alt="Tarocco Orange 2016 McLaren 675LT Coupe" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E76628"></div>
+                    <div class="color-name">Tarocco Orange</div>
+                    <div class="color-hex">#E76628</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 McLaren 675LT Spider</h2>
+            <a href="https://sketchfab.com/3d-models/2017-mclaren-675lt-spider-7f3fcc4ef1a7472c91e0aaa9d0a86a89" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2020/08/McLaren-675LT-Coupe-Chicane-Grey-for-sale-15-of-27.jpg" alt="Chicane Grey 2016 McLaren 675LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #767D7C"></div>
+                    <div class="color-name">Chicane Grey</div>
+                    <div class="color-hex">#767D7C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/8GqzbLWBrfQ/maxresdefault.jpg" alt="Silica White 2016 McLaren 675LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E5E8E6"></div>
+                    <div class="color-name">Silica White</div>
+                    <div class="color-hex">#E5E8E6</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.mclarencf.com/imagetag/74/2/l/Used-2016-McLaren-675LT-Spider.jpg" alt="Solar Yellow 2016 McLaren 675LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD100"></div>
+                    <div class="color-name">Solar Yellow</div>
+                    <div class="color-hex">#FFD100</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.classicdriver.com/sites/default/files/users/95265/cars_images/95265-966488-car-20230506_161403-1.jpg" alt="Onyx Black 2016 McLaren 675LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #101010"></div>
+                    <div class="color-name">Onyx Black</div>
+                    <div class="color-hex">#101010</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://live.staticflickr.com/65535/51199830657_d752d6703e.jpg" alt="Tarocco Orange 2016 McLaren 675LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E76628"></div>
+                    <div class="color-name">Tarocco Orange</div>
+                    <div class="color-hex">#E76628</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2021 McLaren 600LT </h2>
+            <a href="https://sketchfab.com/3d-models/mclaren-600lt-2019-f4577e3a5dc54538884175343013a564" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2020/08/McLaren-675LT-Coupe-Chicane-Grey-for-sale-15-of-27.jpg" alt="Chicane Grey 2021 McLaren 600LT " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #767D7C"></div>
+                    <div class="color-name">Chicane Grey</div>
+                    <div class="color-hex">#767D7C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2024/01/McLaren-570S-Spider-Curacao-Blue-for-sale-18-of-39.jpg" alt="Curacao Blue 2021 McLaren 600LT " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0F8FCB"></div>
+                    <div class="color-name">Curacao Blue</div>
+                    <div class="color-hex">#0F8FCB</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://bringatrailer.com/wp-content/uploads/2021/08/2016_mclaren_675lt_16336415251eaa6fb3a55d67a2016_mclaren_675lt_16333558649f98764da2016_mclaren_675lt_16333558647dff9f98764da4e08580f-b85d-4b93-bd56-325366090fc9-yNbPUd-scaled-1.jpeg?fit=2048%2C1365" alt="Mantis Green 2021 McLaren 600LT " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #48A43F"></div>
+                    <div class="color-name">Mantis Green</div>
+                    <div class="color-hex">#48A43F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.classicdriver.com/sites/default/files/users/95265/cars_images/95265-966488-car-20230506_161403-1.jpg" alt="Onyx Black 2021 McLaren 600LT " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #101010"></div>
+                    <div class="color-name">Onyx Black</div>
+                    <div class="color-hex">#101010</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.mclarenlife.com/attachments/dsc_9125-jpg.223422/" alt="Vermillion Red 2021 McLaren 600LT " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Vermillion Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2021 McLaren 600LT Spider</h2>
+            <a href="https://sketchfab.com/3d-models/2020-mclaren-600lt-spider-ee0705ef636e4336b1a242544056275e" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2020/08/McLaren-675LT-Coupe-Chicane-Grey-for-sale-15-of-27.jpg" alt="Chicane Grey 2021 McLaren 600LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #767D7C"></div>
+                    <div class="color-name">Chicane Grey</div>
+                    <div class="color-hex">#767D7C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2024/01/McLaren-570S-Spider-Curacao-Blue-for-sale-18-of-39.jpg" alt="Curacao Blue 2021 McLaren 600LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0F8FCB"></div>
+                    <div class="color-name">Curacao Blue</div>
+                    <div class="color-hex">#0F8FCB</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://bringatrailer.com/wp-content/uploads/2021/08/2016_mclaren_675lt_16336415251eaa6fb3a55d67a2016_mclaren_675lt_16333558649f98764da2016_mclaren_675lt_16333558647dff9f98764da4e08580f-b85d-4b93-bd56-325366090fc9-yNbPUd-scaled-1.jpeg?fit=2048%2C1365" alt="Mantis Green 2021 McLaren 600LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #48A43F"></div>
+                    <div class="color-name">Mantis Green</div>
+                    <div class="color-hex">#48A43F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.classicdriver.com/sites/default/files/users/95265/cars_images/95265-966488-car-20230506_161403-1.jpg" alt="Onyx Black 2021 McLaren 600LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #101010"></div>
+                    <div class="color-name">Onyx Black</div>
+                    <div class="color-hex">#101010</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.mclarenlife.com/attachments/dsc_9125-jpg.223422/" alt="Vermillion Red 2021 McLaren 600LT Spider" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Vermillion Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2015 McLaren P1 </h2>
+            <a href="https://sketchfab.com/3d-models/free-mclaren-p1-mso-c7687064e08c4be9a0af88e98bcf0a8e" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.alastairbols.com/wp-content/uploads/2019/01/Volcano-Yellow-McLaren-P1-1-of-27.jpg" alt="Volcano Yellow 2015 McLaren P1 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD100"></div>
+                    <div class="color-name">Volcano Yellow</div>
+                    <div class="color-hex">#FFD100</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://cdn.dealeraccelerate.com/collectorsgarage/1/29/1296/1920x1440/w/2015-mclaren-p1" alt="Volcano Orange 2015 McLaren P1 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FF4E00"></div>
+                    <div class="color-name">Volcano Orange</div>
+                    <div class="color-hex">#FF4E00</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/DLrndGy6q70/maxresdefault.jpg" alt="Carbon Black 2015 McLaren P1 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Carbon Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.autoblog.com/.image/ar_4:3%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MjA5MTUzOTM4MjM5Mzk5Nzgw/image-placeholder-title.jpg" alt="McLaren Orange 2015 McLaren P1 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FF8000"></div>
+                    <div class="color-name">McLaren Orange</div>
+                    <div class="color-hex">#FF8000</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://cdn.rmsothebys.com/a/c/8/1/2/9/ac81298ac21b89c57e84995b97080ae6472e8323.webp" alt="Silver Storm 2015 McLaren P1 " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C0C0C0"></div>
+                    <div class="color-name">Silver Storm</div>
+                    <div class="color-hex">#C0C0C0</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2021 Mercedes-Benz AMG GT Black Series</h2>
+            <a href="https://squir.com/mercedes-amg-gt-black-series-2021.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/20981-novak-2021-mercedes-benz-amg-gt-black-series/.thumbnails/_IMG7102.webp/_IMG7102-1200x0.webp" alt="AMG Magma Beam 2021 Mercedes-Benz AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FF5300"></div>
+                    <div class="color-name">AMG Magma Beam</div>
+                    <div class="color-hex">#FF5300</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.vegasautogallery.com/imagetag/2700/4/l/Used-2021-Mercedes-Benz-AMG%C2%AE-GT-BS-1724261148.jpg" alt="Designo Diamond White 2021 Mercedes-Benz AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E5E5E5"></div>
+                    <div class="color-name">Designo Diamond White</div>
+                    <div class="color-hex">#E5E5E5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.marshallgoldmanoh.com/imagetag/2987/51/l/Used-2021-Mercedes-Benz-AMG-GT-Black-Series-1684171614.jpg" alt="Graphite Grey Magno 2021 Mercedes-Benz AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #53565A"></div>
+                    <div class="color-name">Graphite Grey Magno</div>
+                    <div class="color-hex">#53565A</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://bringatrailer.com/wp-content/uploads/2021/11/2021_mercedes-benz_gtr-black-series_2021_mercedes-benz_gtr-black-series_b2ac554a-c02a-44ed-b31b-30bfae07e86e-SGA4cr-1.jpg" alt="Obsidian Black Metallic 2021 Mercedes-Benz AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0E0E0E"></div>
+                    <div class="color-name">Obsidian Black Metallic</div>
+                    <div class="color-hex">#0E0E0E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://hips.hearstapps.com/hmg-prod/images/2022-mercedes-amg-gt-black-series-116-1626270404.jpg?crop=0.849xw:0.849xh;0.105xw,0.135xh&resize=640:*" alt="Brilliant Blue Magno 2021 Mercedes-Benz AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #2A3D66"></div>
+                    <div class="color-name">Brilliant Blue Magno</div>
+                    <div class="color-hex">#2A3D66</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2014 Mercedes-Benz SLS AMG GT Roadster</h2>
+            <a href="https://3dmodels.org/3d-models/mercedes-benz-sls-class-roadster-2011/" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.drivingemotions.com/galleria_images/240/240_p18_l.jpg" alt="Designo Mystic White 2014 Mercedes-Benz SLS AMG GT Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E3E3E3"></div>
+                    <div class="color-name">Designo Mystic White</div>
+                    <div class="color-hex">#E3E3E3</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F12%2F2014-mercedes-benz-sls-amg-black-series-auction-info-008.jpg?q=75&w=800&cbr=1&fit=max" alt="Obsidian Black Metallic 2014 Mercedes-Benz SLS AMG GT Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0E0E0E"></div>
+                    <div class="color-name">Obsidian Black Metallic</div>
+                    <div class="color-hex">#0E0E0E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/44517-seale-2014-mercedes-benz-sls-amg-gt-roadster/.thumbnails/IMG_5543.webp/IMG_5543-tiny-1200x0.webp" alt="Iridium Silver Metallic 2014 Mercedes-Benz SLS AMG GT Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C0C2C4"></div>
+                    <div class="color-name">Iridium Silver Metallic</div>
+                    <div class="color-hex">#C0C2C4</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da4b9237bacccdf19c0760cab7aec4a8359010b0/photos/8FPWEbZzu92.pa6992gK_.jpg?t=160731717810" alt="Le Mans Red 2014 Mercedes-Benz SLS AMG GT Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A0001E"></div>
+                    <div class="color-name">Le Mans Red</div>
+                    <div class="color-hex">#A0001E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.netcarshow.com/Mercedes-Benz-SLS_AMG_Coupe_Electric_Drive-2014-Rear_Three-Quarter.668619d7.jpg" alt="Capri Blue Metallic 2014 Mercedes-Benz SLS AMG GT Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #1B5583"></div>
+                    <div class="color-name">Capri Blue Metallic</div>
+                    <div class="color-hex">#1B5583</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2014 Mercedes-Benz SLS AMG GT Black Series</h2>
+            <a href="https://squir.com/mercedes-sls-amg-black-2013.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.mildcollection.com/imagetag/380/main/l/Used-2014-Mercedes-Benz-SLS-AMG-GT.jpg" alt="Solar Beam Yellow 2014 Mercedes-Benz SLS AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFC800"></div>
+                    <div class="color-name">Solar Beam Yellow</div>
+                    <div class="color-hex">#FFC800</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F12%2F2014-mercedes-benz-sls-amg-black-series-auction-info-008.jpg?q=75&w=800&cbr=1&fit=max" alt="Obsidian Black Metallic 2014 Mercedes-Benz SLS AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0E0E0E"></div>
+                    <div class="color-name">Obsidian Black Metallic</div>
+                    <div class="color-hex">#0E0E0E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/44517-seale-2014-mercedes-benz-sls-amg-gt-roadster/.thumbnails/IMG_5543.webp/IMG_5543-tiny-1200x0.webp" alt="Iridium Silver Metallic 2014 Mercedes-Benz SLS AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C0C2C4"></div>
+                    <div class="color-name">Iridium Silver Metallic</div>
+                    <div class="color-hex">#C0C2C4</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.drivingemotions.com/galleria_images/240/240_p18_l.jpg" alt="Designo Mystic White 2014 Mercedes-Benz SLS AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E3E3E3"></div>
+                    <div class="color-name">Designo Mystic White</div>
+                    <div class="color-hex">#E3E3E3</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da4b9237bacccdf19c0760cab7aec4a8359010b0/photos/8FPWEbZzu92.pa6992gK_.jpg?t=160731717810" alt="Le Mans Red 2014 Mercedes-Benz SLS AMG GT Black Series" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A0001E"></div>
+                    <div class="color-name">Le Mans Red</div>
+                    <div class="color-hex">#A0001E</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2010 Porsche Targa 4s (997)</h2>
+            <a href="https://3dmodels.org/3d-models/porsche-911-targa-4s-2011/" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/GVfkYITBqBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZCsuydR4WWJ7IEpDcnow90vBCSQ" alt="Carrara White 2010 Porsche Targa 4s (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Carrara White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://mrsportscars.com/wp-content/uploads/2020/11/Porsche-911-Targa-4S-2010-Basalt-Black-OPC-Specialist-For-Sale-3-940x600.jpg" alt="Basalt Black Metallic 2010 Porsche Targa 4s (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #201E1F"></div>
+                    <div class="color-name">Basalt Black Metallic</div>
+                    <div class="color-hex">#201E1F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://mrsportscars.com/wp-content/uploads/2021/01/Porsche-911-Carrera-4S-PDK-Coupe-Aqua-Blue-Metallic-997-Gen-2-For-Sale-UK-Specialist-M-R-Sportscars-2-940x600.jpg" alt="Aqua Blue Metallic 2010 Porsche Targa 4s (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #007A9A"></div>
+                    <div class="color-name">Aqua Blue Metallic</div>
+                    <div class="color-hex">#007A9A</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://mrsportscars.com/wp-content/uploads/2023/01/Porsche-911-Carrera-S-997.2-PDK-Coupe-Meteor-Grey-Metallic-Sport-Chrono-PASM-For-Sale-UK-Specialist-1-940x600.jpg" alt="Meteor Grey Metallic 2010 Porsche Targa 4s (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #596066"></div>
+                    <div class="color-name">Meteor Grey Metallic</div>
+                    <div class="color-hex">#596066</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2010 Porsche Targa 4s (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2010 Porsche 911 GT2 RS (997)</h2>
+            <a href="https://3dmodels.org/3d-models/porsche-911-gt2-997-2007/" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2010 Porsche 911 GT2 RS (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2010 Porsche 911 GT2 RS (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2010 Porsche 911 GT2 RS (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://mrsportscars.com/wp-content/uploads/2021/01/Porsche-911-Carrera-4S-PDK-Coupe-Aqua-Blue-Metallic-997-Gen-2-For-Sale-UK-Specialist-M-R-Sportscars-2-940x600.jpg" alt="Aqua Blue Metallic 2010 Porsche 911 GT2 RS (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #007A9A"></div>
+                    <div class="color-name">Aqua Blue Metallic</div>
+                    <div class="color-hex">#007A9A</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/GVfkYITBqBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZCsuydR4WWJ7IEpDcnow90vBCSQ" alt="Carrara White 2010 Porsche 911 GT2 RS (997)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Carrara White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2018 Porsche 911 GT2 RS (991)</h2>
+            <a href="https://squir.com/porsche-911-gt2rs-2018.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2018 Porsche 911 GT2 RS (991)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2018 Porsche 911 GT2 RS (991)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2018 Porsche 911 GT2 RS (991)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2018 Porsche 911 GT2 RS (991)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.pcarmarket.com/static/media/uploads/galleries/photos/uploads/galleries/2018-gt2-rs-weissach-miami-blue/.thumbnails/WP0AE2A9XJS18_kPknARE.jpg/WP0AE2A9XJS18_kPknARE-tiny-2048x0-0.5x0.jpg" alt="Miami Blue 2018 Porsche 911 GT2 RS (991)" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #007885"></div>
+                    <div class="color-name">Miami Blue</div>
+                    <div class="color-hex">#007885</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2011 Porsche 911 GT3 RS</h2>
+            <a href="https://free3d.com/3d-model/porsche-911-gt3-rs-997-5565.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2011 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2011 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://mrsportscars.com/wp-content/uploads/2021/01/Porsche-911-Carrera-4S-PDK-Coupe-Aqua-Blue-Metallic-997-Gen-2-For-Sale-UK-Specialist-M-R-Sportscars-2-940x600.jpg" alt="Aqua Blue Metallic 2011 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #007A9A"></div>
+                    <div class="color-name">Aqua Blue Metallic</div>
+                    <div class="color-hex">#007A9A</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2011 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2011 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2017 Porsche 911 GT3 RS</h2>
+            <a href="https://squir.com/porsche-911-gt3-rs-2019.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://diecastsociety.com//wp-content/uploads/2018/05/aa78168.jpg" alt="Lava Orange 2017 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #E35A19"></div>
+                    <div class="color-name">Lava Orange</div>
+                    <div class="color-hex">#E35A19</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.classicdriver.com/sites/default/files/users/160423/cars_images/160423-1039724-car-20250117_112944-991_gt3rs_ultraviolet-2.jpg" alt="Ultraviolet 2017 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #5F2A7B"></div>
+                    <div class="color-name">Ultraviolet</div>
+                    <div class="color-hex">#5F2A7B</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2017 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2017 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2017 Porsche 911 GT3 RS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2010 Porsche 911 Speedster</h2>
+            <a href="https://squir.com/porsche-911-speedster-2011-3d-model.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.carscoops.com/wp-content/uploads/2022/03/Porsche-911-Speedster-1.jpg" alt="Pure Blue 2010 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #3A70A2"></div>
+                    <div class="color-name">Pure Blue</div>
+                    <div class="color-hex">#3A70A2</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/GVfkYITBqBY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCZCsuydR4WWJ7IEpDcnow90vBCSQ" alt="Carrara White 2010 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">Carrara White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.rennbow.org/includes/images/colorWiki/gallery/17/17_0C82C3F8D0CF9A9559574C4CE36AE323.jpg" alt="Basalt Black Metallic 2010 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #201E1F"></div>
+                    <div class="color-name">Basalt Black Metallic</div>
+                    <div class="color-hex">#201E1F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2010 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2010 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2019 Porsche 911 Speedster</h2>
+            <a href="https://sketchfab.com/3d-models/2019-porsche-911-speedster-9912-e0eb0fe3f02843989d2de3eadfed92c5" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2019 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2019 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2019 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2019 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.motortrend.com/uploads/sites/11/2019/05/2019-Porsche-911-Speedster-Basem-Wasef-02.jpg" alt="Racing Yellow 2019 Porsche 911 Speedster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD100"></div>
+                    <div class="color-name">Racing Yellow</div>
+                    <div class="color-hex">#FFD100</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 Porsche Cayman GT4</h2>
+            <a href="https://squir.com/porsche-cayman-gt4-2016-vray.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://uploads.builtforbackroads.com/uploads/2023/12/2023.12.07-PORSCHE-981-CAYMAN-GT4-2016_3.jpg" alt="Racing Yellow 2016 Porsche Cayman GT4" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFD100"></div>
+                    <div class="color-name">Racing Yellow</div>
+                    <div class="color-hex">#FFD100</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.luxsport.com/galleria_images/407/407_p13_l.jpg" alt="Guards Red 2016 Porsche Cayman GT4" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #C1121F"></div>
+                    <div class="color-name">Guards Red</div>
+                    <div class="color-hex">#C1121F</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2016 Porsche Cayman GT4" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2016 Porsche Cayman GT4" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://media.carsandbids.com/cdn-cgi/image/width=2080,quality=70/da4b9237bacccdf19c0760cab7aec4a8359010b0/photos/37OZLoR0-Y8Hx9c4muRu2-2-qupDLfSx2D/edit/Rkl6j.jpg?t=173402824546" alt="Ultra Violet 2016 Porsche Cayman GT4" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #5F2A7B"></div>
+                    <div class="color-name">Ultra Violet</div>
+                    <div class="color-hex">#5F2A7B</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2016 Porsche Cayman GTS</h2>
+            <a href="https://squir.com/porsche-cayman-gts-2014.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://www.sanfranciscosportscars.com/imagetag/489/46/l/Used-2016-Porsche-Cayman-GT4-1579457364.jpg" alt="Carmine Red 2016 Porsche Cayman GTS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #960018"></div>
+                    <div class="color-name">Carmine Red</div>
+                    <div class="color-hex">#960018</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://cdn.dealeraccelerate.com/collective/1/159/5499/1920x1440/2016-porsche-cayman-gt4" alt="Sapphire Blue Metallic 2016 Porsche Cayman GTS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #005F9E"></div>
+                    <div class="color-name">Sapphire Blue Metallic</div>
+                    <div class="color-hex">#005F9E</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.westcoastexoticcars.com/imagetag/1745/main/l/Used-2018-Porsche-911-GT2-RS-1689280368.jpg" alt="White 2016 Porsche Cayman GTS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #FFFFFF"></div>
+                    <div class="color-name">White</div>
+                    <div class="color-hex">#FFFFFF</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.tradeclassics.com/wp-content/uploads/2022/05/porsche-911-carrera-4s.jpg" alt="GT Silver Metallic 2016 Porsche Cayman GTS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A5A5A5"></div>
+                    <div class="color-name">GT Silver Metallic</div>
+                    <div class="color-hex">#A5A5A5</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.thelastdetail.com/galleria_images/1384/1384_main_l.jpg" alt="Black 2016 Porsche Cayman GTS" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0D0D0D"></div>
+                    <div class="color-name">Black</div>
+                    <div class="color-hex">#0D0D0D</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2011 Pagani Huayra </h2>
+            <a href="https://squir.com/pagani-huayra-2012-3d-model.html" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://cdn11.bigcommerce.com/s-yrkef1j7/images/stencil/1280x1280/products/14416/73757/s-l1600__66067.1623197066.jpg?c=2" alt="Rosso Dubai 2011 Pagani Huayra " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A40001"></div>
+                    <div class="color-name">Rosso Dubai</div>
+                    <div class="color-hex">#A40001</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/Q5TsDCJTl8g/maxresdefault.jpg" alt="Blu Francia 2011 Pagani Huayra " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004C99"></div>
+                    <div class="color-name">Blu Francia</div>
+                    <div class="color-hex">#004C99</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ultimatecarpage.com/images/car/4607/Pagani-Huayra-36304.jpg" alt="Grigio Silverstone 2011 Pagani Huayra " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/TEN09ygqoDs/mqdefault.jpg" alt="Nero Aldebaran 2011 Pagani Huayra " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Aldebaran</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static.wikia.nocookie.net/gran-turismo/images/e/e8/Pagani_Huayra_%2711.jpg/revision/latest/scale-to-width-down/1200?cb=20190131152758" alt="Bronzo Aymara 2011 Pagani Huayra " class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #8C6239"></div>
+                    <div class="color-name">Bronzo Aymara</div>
+                    <div class="color-hex">#8C6239</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="car-section">
+        <header class="car-header">
+            <h2>2017 Pagani Huayra Roadster</h2>
+            <a href="https://sketchfab.com/3d-models/pagani-huayra-roadster-2017-29b7b5e907bc41faa8d216e0e779d1fc" class="btn" target="_blank">See 3D Model</a>
+        </header>
+        <div class="colors-grid">
+    
+            <div class="color-card">
+                <img src="https://cdn11.bigcommerce.com/s-yrkef1j7/images/stencil/1280x1280/products/14416/73757/s-l1600__66067.1623197066.jpg?c=2" alt="Rosso Dubai 2017 Pagani Huayra Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #A40001"></div>
+                    <div class="color-name">Rosso Dubai</div>
+                    <div class="color-hex">#A40001</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/Q5TsDCJTl8g/maxresdefault.jpg" alt="Blu Francia 2017 Pagani Huayra Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #004C99"></div>
+                    <div class="color-name">Blu Francia</div>
+                    <div class="color-hex">#004C99</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://www.ultimatecarpage.com/images/car/4607/Pagani-Huayra-36304.jpg" alt="Grigio Silverstone 2017 Pagani Huayra Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #747678"></div>
+                    <div class="color-name">Grigio Silverstone</div>
+                    <div class="color-hex">#747678</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://i.ytimg.com/vi/TEN09ygqoDs/mqdefault.jpg" alt="Nero Aldebaran 2017 Pagani Huayra Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #0C0C0C"></div>
+                    <div class="color-name">Nero Aldebaran</div>
+                    <div class="color-hex">#0C0C0C</div>
+                </div>
+            </div>
+            
+            <div class="color-card">
+                <img src="https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/04/Huayra_1.jpg" alt="Oro Rosa 2017 Pagani Huayra Roadster" class="color-image" onerror="this.parentElement.innerHTML='<div class='error-placeholder'>Image not available</div>'">
+                <div class="color-info">
+                    <div class="color-preview" style="background-color: #B76E79"></div>
+                    <div class="color-name">Oro Rosa</div>
+                    <div class="color-hex">#B76E79</div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    </div>
+</body>
+</html>
